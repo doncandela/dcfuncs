@@ -1,0 +1,11 @@
+# test1.yaml 8/18/24
+# A test input file for yaml.yaml and test-yaml.yaml
+# This file specifies a single configuration.
+
+
+foo: 3.ee+23
+
+---
+
+foo: 1.2e-23
+

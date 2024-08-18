@@ -1,0 +1,5 @@
+# dcfuncs/pyproject.toml  8/18/24 D.C.
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

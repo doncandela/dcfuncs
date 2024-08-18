@@ -1,0 +1,15 @@
+# test0.yaml 8/18/24
+# A test input file for yaml.yaml and test-yaml.yaml
+# This file specifies a single configuration.
+
+type: 'test-configs'
+
+x : 43
+name : 'George Washington'
+
+nested1:
+    sub11: 2
+    sub12: 3
+    list: [4,5,6]
+
+
