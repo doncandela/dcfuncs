@@ -112,7 +112,7 @@ if __name__=='__main__':
     # For this test to succeed, the directory in which this is
     # must contain the two config files test0.yaml, test1.yaml
     # and each config they specify must contain the line:
-    # type: test-yaml
+    # type: test-configs
     cdicts = get_configs(cfiles=['test0','test1'],types=['test-configs'])
     for idict,cdict in enumerate(cdicts):
         print(f'\nReturned config {idict+1}/{len(cdicts)}:')

@@ -6,7 +6,8 @@ Utility functions:
         Handles general error by printing a message and raising SystemExit.
         Can optionally print warning without raising SysemExit.
     stoi
-        Converts a string
+        Makes an int from a string, useful for getting probably probably
+        unique random seeds. 
     get_units
         Gets prefix and multiplier for printing a number in engineering units.
 
@@ -89,7 +90,6 @@ def get_units(num):
         return 1e9,'n','n'
     else:
         return 1e12,'f','f'
-
     
 """ ****************** UTILITY CLASSES ******************** """
 
@@ -425,7 +425,9 @@ class NTVI():
 
 class SimArrays:
     """Utility object that allocates a group of arrays for vectorized
-    calculations during the sim, and optionally fills the arrays with values.
+    calculations, and optionally fills the arrays with values. Was
+    written for DEM simulation code to facilitate logical grouping of
+    arrays of different types and shapes.
 
     The arrays in one SimArrays object will all pertain to one sort of
     thing (eg grain types, or grains that are present), and initially the
