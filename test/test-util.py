@@ -1,7 +1,7 @@
 """Module test-util.py tests ability to import and use code in
 dcfuncs/util.py.
 """
-THIS_IS = 'dutil.py 8/18/24 D.C.'
+THIS_IS = 'dutil.py 8/19/24 D.C.'
 
 import numpy as np
 import dcfuncs.util as dutil
@@ -11,7 +11,7 @@ if __name__=='__main__':
     print(f'Using: {dutil.THIS_IS}')
     
     print('\nTesting zz:')
-    # zz('util.py test code','Doing an error exit.')
+    # dutil.zz('util.py test code','Doing an error exit.')
     dutil.zz('util.py test code','This is just a warning.',warn=True)
     
     print('\nTesting stoi:')
